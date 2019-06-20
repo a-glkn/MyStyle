@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>MyStyle</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Дубль стилей напрмую с сайта и гугла -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://2.59.43.184/bitrix/cache/css/s1/mystyle/template_25f86cd3a27497e74be5a5550cf13b61/template_25f86cd3a27497e74be5a5550cf13b61_v1.css?1560512111160071">
+	<link rel="stylesheet" href="http://2.59.43.184/bitrix/cache/css/s1/mystyle/page_5768c145a7dfcc7d031bcccde981f2f2/page_5768c145a7dfcc7d031bcccde981f2f2_v1.css?15605121116461">
+	<!-- Конец дублей -->
+
+
+	<!-- календарь -->
+	<!-- Брал отсюда: https://www.jqueryscript.net/time-clock/Pretty-Event-Calendar-&-Datepicker-Plugin-For-jQuery-Calendar-js.html -->
+	<link rel="stylesheet" href="js/calendar/calendar.css">
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/calendar/calendar.js?V=2"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#calendar').calendar({
+					width: 225,
+					height: 285,
+					label: false,
+					view: 'date',
+					data: [
+						{
+							date: '2019/06/4',
+							value: 'Some Event'
+						},
+						{
+							date: '2019/06/10',
+							value: 'Some Event 2'
+						}
+					],
+					weekArray: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+					startWeek: 1,
+					monthArray: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+			});
+		});
+	</script>
+	<!-- календарь - конец -->
+
+	<style>
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Regular.woff') format('woff'),
+			url('fonts/Circe/Circe-Regular.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Regular.svg#Circe-Regular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Bold.woff') format('woff'),
+			url('fonts/Circe/Circe-Bold.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Bold.svg#Circe-Bold') format('svg');
+			font-weight: bold;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Light.woff') format('woff'),
+			url('fonts/Circe/Circe-Light.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Light.svg#Circe-Light') format('svg');
+			font-weight: 300;
+			font-style: normal;
+		}
+	</style>
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<section class="section pt pb">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-xl-3">
+					<aside class="sidebar">
+						<div class="sidebar__heading">Выберите город</div>
+
+						<a href="#" class="btn btn-border-blue active">Санкт-Петербург</a>
+						<a href="#" class="btn btn-border-blue">Москва</a>
+						<a href="#" class="btn btn-border-blue">Екатеринбург</a>
+						<a href="#" class="btn btn-border-blue">Новосибирск</a>
+
+						<div class="sidebar__heading mt-4">Выберите дату</div>
+
+						<div id="calendar"></div>
+					</aside>
+				</div>
+
+				<div class="col-xl-9">
+					<div class="section__heading section__heading_line_grey-full">Расписание школы перманентного макияжа MyStyle</div>
+
+					<div class="article-list mt-5">
+						<div class="article-list__item">
+							<div class="article article_type-no-img">
+								<div class="article__content">
+									<div class="article__title">
+										<a href="#">Ознакомительный семинар – презентация Школы MyStyle и линий продукции MyStyle</a>
+									</div>
+
+									<div class="article__date">
+										<span>Даты:</span> 25 апреля 2019 / 23 мая 2019 / 20 июня 2019 / 18 июля 2019 / 22 августа 2019
+									</div>
+
+									<div class="article__text">
+										Обзор программ подготовки специалистов Школы MyStyle, Семинар «Колористика. Работа с палитрой пигментов MyStyle.» Демонстрационная процедура на модели – мастер-класс от методиста и технолога Школы MyStyle.
+									</div>
+
+									<div class="article__info">
+										<span>Стоимость участия: </span> Бесплатно
+									</div>
+
+									<div class="article__notes">
+										<a href="#">Подробнее ...</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="article-list__item">
+							<div class="article article_type-no-img">
+								<div class="article__content">
+									<div class="article__title">
+										<a href="#">Ознакомительный семинар – презентация Школы MyStyle и линий продукции MyStyle</a>
+									</div>
+
+									<div class="article__date">
+										<span>Даты:</span> 25 апреля 2019 / 23 мая 2019 / 20 июня 2019 / 18 июля 2019 / 22 августа 2019
+									</div>
+
+									<div class="article__text">
+										Обзор программ подготовки специалистов Школы MyStyle, Семинар «Колористика. Работа с палитрой пигментов MyStyle.» Демонстрационная процедура на модели – мастер-класс от методиста и технолога Школы MyStyle.
+									</div>
+
+									<div class="article__info">
+										<span>Стоимость участия: </span> Бесплатно
+									</div>
+
+									<div class="article__notes">
+										<a href="#">Подробнее ...</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="article-list__item">
+							<div class="article article_type-no-img">
+								<div class="article__content">
+									<div class="article__title">
+										<a href="#">Ознакомительный семинар – презентация Школы MyStyle и линий продукции MyStyle</a>
+									</div>
+
+									<div class="article__date">
+										<span>Даты:</span> 25 апреля 2019 / 23 мая 2019 / 20 июня 2019 / 18 июля 2019 / 22 августа 2019
+									</div>
+
+									<div class="article__text">
+										Обзор программ подготовки специалистов Школы MyStyle, Семинар «Колористика. Работа с палитрой пигментов MyStyle.» Демонстрационная процедура на модели – мастер-класс от методиста и технолога Школы MyStyle.
+									</div>
+
+									<div class="article__info">
+										<span>Стоимость участия: </span> Бесплатно
+									</div>
+
+									<div class="article__notes">
+										<a href="#">Подробнее ...</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- За основу взяты крошки с сайта и переписаны его его текущие стили/ добавлен еще один link на ресурсы сайта -->
+					<div class="bx-pagination bx-blue">
+						<div class="bx-pagination-container">
+							<ul>
+
+								<li class="bx-pag-prev"><span>Назад</span></li>
+								<li class="bx-active"><span>1</span></li>
+
+								<li class=""><a href="/events/?PAGEN_1=2"><span>2</span></a></li>
+								<li class=""><a href="/events/?PAGEN_1=3"><span>3</span></a></li>
+								<li class=""><a href="/events/?PAGEN_1=4"><span>4</span></a></li>
+
+								<li class=""><a href="/events/?PAGEN_1=9"><span>9</span></a></li>
+								<li class="bx-pag-next"><a href="/events/?PAGEN_1=2"><span>Вперед</span></a></li>
+
+							</ul>
+							<div style="clear:both"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section bg-grey pt pb">
+		<div class="container">
+			<div class="section__text text-center">
+				<p>Занятия Школы MyStyle в Санкт-Петербурге проходят в Учебном центре ICG :
+				<br>ул.Чайковского, 17. Тел.: +7-812-565-52-57</p>
+
+				<p>Занятия Школы MyStyle в Москве проходят в Учебном центре ICG :
+				<br>ул. Барклая, д.6, стр.3. Тел.: +7-495-445-37-71</p>
+
+				<p>Занятия Школы MyStyle в Екатеринбурге проходят в Учебном центре ICG :
+				<br>ул.Блюхера, 45. Тел.: +7-343-363-84-38</p>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

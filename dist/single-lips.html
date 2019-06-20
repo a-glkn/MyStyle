@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>MyStyle</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Дубль стилей напрмую с сайта и гугла -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="http://2.59.43.184/bitrix/cache/css/s1/mystyle/template_25f86cd3a27497e74be5a5550cf13b61/template_25f86cd3a27497e74be5a5550cf13b61_v1.css?1560512111160071">
+	<!-- Конец дублей -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+
+	<!-- Fancybox с сайта -->
+	<script type="text/javascript" src="http://2.59.43.184/local/templates/mystyle/js/fancybox/jquery.fancybox.min.js"></script>
+
+	<!-- Скрипт обратного отсчета -->
+	<!-- http://countdownjs.org/readme.html -->
+	<script type="text/javascript" src="js/countdown.min.js"></script>
+	<script type="text/javascript">
+		var dateToEnd = new Date(2019, 8, 1);
+
+		setInterval(function() {
+			var cd = countdown( null, dateToEnd, countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS );
+
+			$('.countdown__digits .countdown__days span').html(cd.days);
+			$('.countdown__digits .countdown__hours span').html(cd.hours);
+			$('.countdown__digits .countdown__minutes span').html(cd.minutes);
+			$('.countdown__digits .countdown__seconds span').html(cd.seconds);
+		}, 1000);
+	</script>
+
+
+	<style>
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Regular.woff') format('woff'),
+			url('fonts/Circe/Circe-Regular.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Regular.svg#Circe-Regular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Bold.woff') format('woff'),
+			url('fonts/Circe/Circe-Bold.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Bold.svg#Circe-Bold') format('svg');
+			font-weight: bold;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Light.woff') format('woff'),
+			url('fonts/Circe/Circe-Light.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Light.svg#Circe-Light') format('svg');
+			font-weight: 300;
+			font-style: normal;
+		}
+	</style>
+
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<section class="section section_lips section_full_bg section_top_frame section_bottom_frame" style="background-image: url(img/bg-lips.jpg);">
+		<div class="wrapper">
+			<div class="container">
+				<div class="section__text">
+					08.08.2019
+				</div>
+
+				<div class="section__main-heading">
+					Техника перманентного<br> макияжа губ
+				</div>
+
+				<div class="section__text">
+					Запишитесь на семинар
+				</div>
+
+				<button class="btn btn-bg-blue">Записаться</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section_countdown">
+		<div class="container">
+			<div class="countdown pt pb">
+				<div class="section__heading section__heading_blue-line">Успейте записаться</div>
+
+				<div class="section__text text-center">
+					<p>Спешите записаться на семинар «Техника перманентного макияжа губ»!</p>
+				</div>
+
+				<div class="countdown__digits">
+					<div class="countdown__days countdown__digits__item">
+						<span>01</span>
+						<div>Дней</div>
+					</div>
+					<div class="countdown__sep">
+						:
+					</div>
+					<div class="countdown__hours countdown__digits__item">
+						<span>02</span>
+						<div>Часов</div>
+					</div>
+					<div class="countdown__sep">
+						:
+					</div>
+					<div class="countdown__minutes countdown__digits__item">
+						<span>03</span>
+						<div>Минут</div>
+					</div>
+					<div class="countdown__sep">
+						:
+					</div>
+					<div class="countdown__seconds countdown__digits__item">
+						<span>04</span>
+						<div>Секунд</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section pt pb">
+		<div class="container">
+			<div class="section__text text-center">На 8-часовом семинаре «Все о губах в перманентном макияже» изучаются:</div>
+
+			<div class="ordered-features">
+				<div class="ordered-features__item">
+					<span>01</span>
+					<p>Правила визажа</p>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>02</span>
+					<p>Подбор пигментов с учетом цветотипа клиента</p>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>03</span>
+					<p>Различные методики растушевки</p>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>04</span>
+					<p>Оттенение белой линии «liplight»</p>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>05</span>
+					<p>Наиболее часто встречающиеся ошибки выполнения</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section bg-grey pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">Подробности</div>
+			<div class="icons-list">
+				<div class="icons-list__item">
+					<svg class="icon">
+						<!-- #icon-eyebrow - вторая иконка -->
+						<use xlink:href="img/sprite.svg#icon-model" />
+					</svg>
+
+					<span>Не менее трех моделей</span>
+					<p>Практическая работа на моделях занимает основную часть времени семинара</p>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<!-- #icon-eyebrow - вторая иконка -->
+						<use xlink:href="img/sprite.svg#icon-time" />
+					</svg>
+
+					<span>Срок обучения один день</span>
+					<p>Группа состоит 2-5 человек. </p>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<!-- #icon-eyebrow - вторая иконка -->
+						<use xlink:href="img/sprite.svg#icon-zapis" />
+					</svg>
+
+					<span>Предваритеьная запись</span>
+					<p>Зачисление на семинар проводится по предварительной записи.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">Преподаватели</div>
+			<div class="team">
+
+				<div class="team__item">
+					<img src="img/p1.jpg" class="team__img">
+					<div class="team__heading">Евгения Демина</div>
+
+					<div class="team__info">Методист школы перманентного макияжа и визажа MyStyle в Москве</div>
+
+					<a href="#" class="team__link">Подробнее</a>
+				</div>
+
+				<div class="team__item">
+					<img src="img/p2.jpg" class="team__img">
+					<div class="team__heading">Ольга Сторчеус</div>
+
+					<div class="team__info">Методист школы перманентного макияжа и визажа MyStyle в Москве</div>
+
+					<a href="#" class="team__link">Подробнее</a>
+				</div>
+
+				<div class="team__item">
+					<img src="img/p3.jpg" class="team__img">
+					<div class="team__heading">Илья Демешкевич</div>
+
+					<div class="team__info">Методист школы перманентного макияжа и визажа MyStyle в Москве</div>
+
+					<a href="#" class="team__link">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section_gallery bg-grey pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">
+				Галерея
+			</div>
+
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g1.jpg" data-fancybox="gallery"><img src="img/g1.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g2.jpg" data-fancybox="gallery"><img src="img/g2.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g3.jpg" data-fancybox="gallery"><img src="img/g3.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g4.jpg" data-fancybox="gallery"><img src="img/g4.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g5.jpg" data-fancybox="gallery"><img src="img/g5.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g6.jpg" data-fancybox="gallery"><img src="img/g6.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g7.jpg" data-fancybox="gallery"><img src="img/g7.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g8.jpg" data-fancybox="gallery"><img src="img/g8.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g1.jpg" data-fancybox="gallery"><img src="img/g1.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g2.jpg" data-fancybox="gallery"><img src="img/g2.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g3.jpg" data-fancybox="gallery"><img src="img/g3.jpg" alt=""></a>
+				</div>
+
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="img/g4.jpg" data-fancybox="gallery"><img src="img/g4.jpg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">Регистрация</div>
+
+			<div class="section__semi-heading text-center">Заполните форму для участия</div>
+
+			<form class="form mt-5">
+				<div class="row justify-content-md-center">
+					<div class="col-lg-5"><input type="text" class="form__input" placeholder="Имя"></div>
+					<div class="col-lg-5"><input type="text" class="form__input" placeholder="Город*"></div>
+				</div>
+
+				<div class="row justify-content-md-center">
+					<div class="col-lg-5"><input type="text" class="form__input" placeholder="Контактный e-mail:*"></div>
+					<div class=" col-lg-5"><input type="text" class="form__input" placeholder="Контактный телефон*"></div>
+				</div>
+
+				<div class="row justify-content-md-center">
+					<div class="col-lg-10">
+						<textarea class="form__textarea" placeholder="Ваше сообщение:*"></textarea>
+					</div>
+				</div>
+
+				<div class="text-center">
+					<label class="checkbox">Я даю согласие на обработку своих персональных данных
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+				</div>
+
+
+				<div class="btn-container mt-4 text-center">
+					<button type="submit" class="btn btn-bg-blue">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+</body>
+</html>

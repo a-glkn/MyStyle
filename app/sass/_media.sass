@@ -1,0 +1,214 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.article
+		.article__title
+			font-size: 22px
+
+		.article__text
+			font-size: 16px
+	.btn-links-container
+		flex-wrap: wrap
+		justify-content: center
+		.btn
+			min-width: 210px
+			margin: 12px !important
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.article
+		.article__title
+			font-size: 20px
+
+		.article__text
+			font-size: 14px
+
+		.article__promotion
+			font-size: 14px
+			div
+				font-size: 18px
+		.article__notes
+			font-size: 14px
+	.section__heading
+		font-size: 24px
+		padding-bottom: 20px
+	.section__main-heading
+		font-size: 32px
+
+	.section__text.section__text_size_lg
+		font-size: 20px
+		p
+			font-size: 20px
+
+	.section_intro
+		.row
+			padding-top: 133px
+			min-height: 1px
+	.school-menu-wrapper
+		height: auto
+		.school-menu
+			flex-direction: column
+			height: auto
+			.school-menu__item
+				width: 100%
+				padding-left: 15px
+				padding-right: 15px
+				padding-top: 100px
+				padding-bottom: 100px
+				margin-bottom: 2px
+				&:last-child
+					margin-bottom: 0
+				.btn
+					opacity: 1
+
+
+	.produсt-card
+		.produсt-card__img
+			margin-top: 60px
+
+	.ordered-features, .icons-list
+		flex-direction: column
+
+	.icons-list
+		.icons-list__item
+			margin-bottom: 2em
+
+	.team
+		flex-direction: column
+		justify-content: center
+		margin-top: 60px
+		.team__item
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 135px + 50px
+			&:last-child
+				margin-bottom: 0
+
+
+	.countdown
+		.countdown__digits
+			.countdown__digits__item, .countdown__sep
+				font-size: 48px
+				width: 80px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.article
+		flex-direction: column
+		.article__content
+			width: 100% !important
+			margin-top: 2em
+		.article__image
+			width: 100% !important
+		.article__notes
+			margin-top: 1em
+
+		&.article_reversed
+			flex-direction: column
+	.article
+		padding-top: 40px
+		padding-bottom: 40px
+	.list_two_cols
+		.list__item
+			width: 100%
+			text-align: left !important
+			padding-left: 16px !important
+			padding-right: 0 !important
+			&:before
+				left: 0 !important
+	.produсt-card
+		.produсt-card__heading
+			font-size: 24px
+
+
+	.variants-slider
+		width: 100%
+		.slick-arrow.slick-prev
+			left: 0
+		.slick-arrow.slick-next
+			right: 0
+
+	.countdown
+		.countdown__digits
+			.countdown__digits__item, .countdown__sep
+				font-size: 32px
+				width: 60px
+			.countdown__digits__item
+				div
+					font-size: 12px
+					letter-spacing: 0
+@media (max-width: 580px)
+	.slider_pop-items
+		.slick-prev
+			left: 25px
+			z-index: 1
+		.slick-next
+			right: 25px
+			z-index: 1
+
+@media (max-width: 575px)
+	.produсt-card .produсt-card__number
+		text-align: left
+		margin-top: 0.5em
+		margin-bottom: 1em
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.article
+		.article__content
+			margin-top: 1em
+		.article__title
+			font-size: 16px
+
+		.article__promotion
+			div
+				font-size: 16px
+
+
+	.section__heading
+		font-size: 24px
+		padding-bottom: 20px
+	.section__main-heading
+		font-size: 32px
+
+	.countdown
+
+		.countdown__digits
+			.countdown__digits__item, .countdown__sep
+				font-size: 24px
+				width: 40px
+				padding-left: 5px
+				padding-right: 5px
+			.countdown__digits__item
+				div
+					font-size: 11px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

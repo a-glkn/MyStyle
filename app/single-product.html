@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>MyStyle</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Дубль стилей напрмую с сайта и гугла -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="http://2.59.43.184/bitrix/cache/css/s1/mystyle/template_25f86cd3a27497e74be5a5550cf13b61/template_25f86cd3a27497e74be5a5550cf13b61_v1.css?1560512111160071">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+	<!-- Конец дублей -->
+
+	<!-- Ресурсы для слайдера, слайдер slick уже есть на сайте -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- / -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<script>
+		$(function() {
+			$('.variants-slider').slick({
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				arrows: true,
+				infinite: true,
+				responsive: [
+						{
+								breakpoint: 991,
+								settings: {
+										slidesToShow: 4,
+										slidesToScroll: 1,
+								}
+						},
+						{
+								breakpoint: 767,
+								settings: {
+										slidesToShow: 4,
+										slidesToScroll: 1
+								}
+						},
+						{
+								breakpoint: 480,
+								settings: {
+										slidesToShow: 3,
+										slidesToScroll: 1
+								}
+						},
+						{
+								breakpoint: 360,
+								settings: {
+										slidesToShow: 2,
+										slidesToScroll: 1
+								}
+						}
+				]
+			});
+
+			//Беру насройки слайдера на главной
+			var topSliderParam = {
+					dots: false,
+					infinite: true,
+					speed: 300,
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					responsive: [
+							{
+									breakpoint: 991,
+									settings: {
+											slidesToShow: 3,
+											slidesToScroll: 1,
+											infinite: true,
+									}
+							},
+							{
+									breakpoint: 767,
+									settings: {
+											slidesToShow: 2,
+											slidesToScroll: 1
+									}
+							},
+							{
+									breakpoint: 480,
+									settings: {
+											slidesToShow: 1,
+											slidesToScroll: 1
+									}
+							}
+					]
+			};
+
+			$('.slider_pop-items').slick(topSliderParam);
+
+		});
+	</script>
+</head>
+
+<body>
+	<section class="section section_product-card produсt-card pt pb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="row d-lg-none">
+						<div class="col-sm-6">
+							<div class="produсt-card__term">Professional</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="produсt-card__number">№230</div>
+						</div>
+					</div>
+
+					<div class="produсt-card__heading d-lg-none">Королевский красный</div>
+
+					<div class="produсt-card__img">
+						<div class="produсt-card__img-icon">
+							<svg class="icon">
+								<!-- #icon-eyebrow - вторая иконка -->
+								<use xlink:href="img/sprite.svg#icon-lips" />
+							</svg>
+						</div>
+
+						<img src="img/product.png" alt="" class="produсt-card__img-main">
+
+						<div class="produсt-card__img-bottom-layer" >
+							<svg viewBox="0 0 233 278" class="icon" style="fill: #eb7b37">
+								<use xlink:href="img/sprite.svg#icon-stroke" />
+							</svg>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-lg-7">
+					<div class="d-none d-lg-block">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="produсt-card__term">Professional</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="produсt-card__number">№230</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="produсt-card__heading d-none d-lg-block">Королевский красный</div>
+
+					<div class="variants-slider-wrapper">
+						<div class="variants-slider">
+							<div class="item">
+								<div class="circle" style="background-color: #d74f68;"></div>
+								<div>911</div>
+								<div>Румба</div>
+							</div>
+
+							<div class="item">
+								<div class="circle" style="background-color: #bf3352;"></div>
+								<div>913</div>
+								<div>Калипсо</div>
+							</div>
+
+							<div class="item">
+								<div class="circle" style="background-color: #c52633;"></div>
+								<div>912</div>
+								<div>Болеро</div>
+							</div>
+
+							<div class="item">
+								<div class="circle" style="background-color: #9c3e39;"></div>
+								<div>914</div>
+								<div>Фламенко</div>
+							</div>
+
+							<div class="item">
+								<div class="circle" style="background-color: #eb7b37;"></div>
+								<div>666</div>
+								<div>Оранжевый</div>
+							</div>
+
+							<div class="item">
+								<div class="circle" style="background-color: #eb7b37;"></div>
+								<div>666</div>
+								<div>Оранжевый</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="produсt-card__text">
+						<p class="desc">интенсивный, лучистый</p>
+						<p>Новое поколение пигментов для губ на основе улучшенной гиппоаллергенной формулы красящих веществ</p>
+						<ul>
+							<li>14 оттенков</li>
+							<li>100% фиксация в коже</li>
+							<li>100% соответствие цвета</li>
+							<li>10 мл объем флакона</li>
+						</ul>
+					</div>
+
+					<button class="btn btn-bg-blue">Отправить запрос</button>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section bg-grey pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">Свяжитесь с нами</div>
+
+			<div class="section__semi-heading text-center">Оставьте сообщение, мы свяжемся с Вами как можно скорее</div>
+
+			<form class="form mt-5">
+				<div class="row justify-content-md-center">
+					<div class="col-lg-5"><input type="text" class="form__input" placeholder="Имя"></div>
+					<div class="col-lg-5"><input type="text" class="form__input" placeholder="Город*"></div>
+				</div>
+
+				<div class="row justify-content-md-center">
+					<div class="col-lg-5"><input type="text" class="form__input" placeholder="Контактный e-mail:*"></div>
+					<div class=" col-lg-5"><input type="text" class="form__input" placeholder="Контактный телефон*"></div>
+				</div>
+
+				<div class="row justify-content-md-center">
+					<div class="col-lg-10">
+						<textarea class="form__textarea" placeholder="Ваше сообщение:*"></textarea>
+					</div>
+				</div>
+
+				<div class="text-center">
+					<label class="checkbox">Я даю согласие на обработку своих персональных данных
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+				</div>
+
+				<div class="btn-container mt-4 text-center">
+					<button type="submit" class="btn btn-bg-blue">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="section pt pb">
+		<div class="container">
+
+			<div class="section__heading section__heading_blue-line">Популярные товары</div>
+
+			<!-- Использую слайдер с главной -->
+			<div class="slider-items slider_pop-items">
+				<div class="item">
+					<div class="icon-circle">
+						<svg class="icon">
+							<!-- #icon-eyebrow - вторая иконка -->
+							<use xlink:href="img/sprite.svg#icon-lips" />
+						</svg>
+					</div>
+					<div class="img">
+						<svg class="icon" style="fill: #d84e67">
+							<use xlink:href="img/sprite.svg#icon-stroke" />
+						</svg>
+						<img src="http://2.59.43.184/upload/resize_cache/iblock/d9f/274_160_1c581f715b0e26ceece966787bc537932/d9f902a79f6a90a1a27e850903773368.png">
+					</div>
+
+					<div class="caption">
+						<div class="title">911 румба</div>
+						<div class="preview_text">яркий, плотный винно-красный цвет</div>
+						<div class="bottom">
+							<div class="link">
+								<a href="/products/pigmenty/professional/pigmenty-dlya-gub/" class="btn btn-bg-red">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="icon-circle">
+						<svg class="icon">
+							<!-- #icon-eyebrow - вторая иконка -->
+							<use xlink:href="img/sprite.svg#icon-eyebrow" />
+						</svg>
+					</div>
+					<div class="img">
+						<svg class="icon" style="fill: #d84e67">
+							<use xlink:href="img/sprite.svg#icon-stroke" />
+						</svg>
+						<img src="http://2.59.43.184/upload/resize_cache/iblock/d9f/274_160_1c581f715b0e26ceece966787bc537932/d9f902a79f6a90a1a27e850903773368.png">
+					</div>
+
+					<div class="caption">
+						<div class="title">911 румба</div>
+						<div class="preview_text">яркий, плотный винно-красный цвет</div>
+						<div class="bottom">
+							<div class="link">
+								<a href="/products/pigmenty/professional/pigmenty-dlya-gub/" class="btn btn-bg-red">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="icon-circle">
+						<svg class="icon">
+							<!-- #icon-eyebrow - вторая иконка -->
+							<use xlink:href="img/sprite.svg#icon-lips" />
+						</svg>
+					</div>
+					<div class="img">
+						<svg class="icon" style="fill: #d84e67">
+							<use xlink:href="img/sprite.svg#icon-stroke" />
+						</svg>
+						<img src="http://2.59.43.184/upload/resize_cache/iblock/d9f/274_160_1c581f715b0e26ceece966787bc537932/d9f902a79f6a90a1a27e850903773368.png">
+					</div>
+
+					<div class="caption">
+						<div class="title">911 румба</div>
+						<div class="preview_text">яркий, плотный винно-красный цвет</div>
+						<div class="bottom">
+							<div class="link">
+								<a href="/products/pigmenty/professional/pigmenty-dlya-gub/" class="btn btn-bg-red">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="icon-circle">
+						<svg class="icon">
+							<!-- #icon-eyebrow - вторая иконка -->
+							<use xlink:href="img/sprite.svg#icon-lips" />
+						</svg>
+					</div>
+					<div class="img">
+						<svg class="icon" style="fill: #d84e67">
+							<use xlink:href="img/sprite.svg#icon-stroke" />
+						</svg>
+						<img src="http://2.59.43.184/upload/resize_cache/iblock/d9f/274_160_1c581f715b0e26ceece966787bc537932/d9f902a79f6a90a1a27e850903773368.png">
+					</div>
+
+					<div class="caption">
+						<div class="title">911 румба</div>
+						<div class="preview_text">яркий, плотный винно-красный цвет</div>
+						<div class="bottom">
+							<div class="link">
+								<a href="/products/pigmenty/professional/pigmenty-dlya-gub/" class="btn btn-bg-red">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="icon-circle">
+						<svg class="icon">
+							<!-- #icon-eyebrow - вторая иконка -->
+							<use xlink:href="img/sprite.svg#icon-lips" />
+						</svg>
+					</div>
+					<div class="img">
+						<svg class="icon" style="fill: #d84e67">
+							<use xlink:href="img/sprite.svg#icon-stroke" />
+						</svg>
+						<img src="http://2.59.43.184/upload/resize_cache/iblock/d9f/274_160_1c581f715b0e26ceece966787bc537932/d9f902a79f6a90a1a27e850903773368.png">
+					</div>
+
+					<div class="caption">
+						<div class="title">911 румба</div>
+						<div class="preview_text">яркий, плотный винно-красный цвет</div>
+						<div class="bottom">
+							<div class="link">
+								<a href="/products/pigmenty/professional/pigmenty-dlya-gub/" class="btn btn-bg-red">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="icon-circle">
+						<svg class="icon">
+							<!-- #icon-eyebrow - вторая иконка -->
+							<use xlink:href="img/sprite.svg#icon-lips" />
+						</svg>
+					</div>
+					<div class="img">
+						<svg class="icon" style="fill: #d84e67">
+							<use xlink:href="img/sprite.svg#icon-stroke" />
+						</svg>
+						<img src="http://2.59.43.184/upload/resize_cache/iblock/d9f/274_160_1c581f715b0e26ceece966787bc537932/d9f902a79f6a90a1a27e850903773368.png">
+					</div>
+
+					<div class="caption">
+						<div class="title">911 румба</div>
+						<div class="preview_text">яркий, плотный винно-красный цвет</div>
+						<div class="bottom">
+							<div class="link">
+								<a href="/products/pigmenty/professional/pigmenty-dlya-gub/" class="btn btn-bg-red">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="icon-circle">
+						<svg class="icon">
+							<!-- #icon-eyebrow - вторая иконка -->
+							<use xlink:href="img/sprite.svg#icon-lips" />
+						</svg>
+					</div>
+					<div class="img">
+						<svg class="icon" style="fill: #d84e67">
+							<use xlink:href="img/sprite.svg#icon-stroke" />
+						</svg>
+						<img src="http://2.59.43.184/upload/resize_cache/iblock/d9f/274_160_1c581f715b0e26ceece966787bc537932/d9f902a79f6a90a1a27e850903773368.png">
+					</div>
+
+					<div class="caption">
+						<div class="title">911 румба</div>
+						<div class="preview_text">яркий, плотный винно-красный цвет</div>
+						<div class="bottom">
+							<div class="link">
+								<a href="/products/pigmenty/professional/pigmenty-dlya-gub/" class="btn btn-bg-red">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
