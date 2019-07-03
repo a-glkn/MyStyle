@@ -1,6 +1,15 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1300px)
+	.main-slider
+		.main-slider__item
+			.product-slider
+				margin-left: auto
+				margin-right: auto
+			&.main-slider__item_slider
+				.section__heading
+					width: 100%
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -62,7 +71,28 @@
 					margin-bottom: 0
 				.btn
 					opacity: 1
-
+		&.school-menu-wrapper_slider
+			.school-menu
+				.school-menu__item
+					height: 200px
+					padding-top: 0
+					.school-menu__icon
+						margin-top: 10px
+						margin-bottom: 5px
+						width: 40px
+						height: 40px
+						.icon
+							width: 40px
+							height: 40px
+					.btn
+						margin-top: 15px
+					.school-menu__heading
+						margin-bottom: 5px
+						padding-bottom: 5px
+						br
+							display: none
+					.school-menu__semi-heading
+						margin-top: 5px
 
 	.produсt-card
 		.produсt-card__img
@@ -92,6 +122,37 @@
 			.countdown__digits__item, .countdown__sep
 				font-size: 48px
 				width: 80px
+
+	.main-slider
+		.slick-arrow
+			display: none !important
+
+		.slick-dots
+			bottom: 0
+
+		.main-slider__item
+			height: 925px
+
+	.section_slider
+		position: relative
+		.promo-link
+			left: 0
+			bottom: 38px
+	.main-slider
+		.main-slider__item
+			&.main-slider__item_school-menu
+				.container
+					margin-top: 0
+
+	.main-slider
+		.main-slider__item
+			.product-slider
+				width: 100%
+				.item
+					opacity: 1
+			&.main-slider__item_slider
+				.section__heading
+					width: 100%
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.article
@@ -138,6 +199,10 @@
 				div
 					font-size: 12px
 					letter-spacing: 0
+
+	.main-slider
+		.main-slider__item
+			background-position: right
 @media (max-width: 580px)
 	.slider_pop-items
 		.slick-prev
