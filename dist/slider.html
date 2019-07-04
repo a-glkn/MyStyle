@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>MyStyle</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Дубль стилей напрмую с сайта и гугла -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="http://2.59.43.184/bitrix/cache/css/s1/mystyle/template_bacba87436f6eef3b967237c1dd849c8/template_bacba87436f6eef3b967237c1dd849c8_v1.css?1562141887168291">
+	<!-- Конец дублей -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+
+	<!-- slick слайдер с сайта -->
+	<script type="text/javascript" src="http://2.59.43.184/local/templates/mystyle/js/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="http://2.59.43.184/local/templates/mystyle/js/slick/slick.css">
+
+	<style>
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Regular.woff') format('woff'),
+			url('fonts/Circe/Circe-Regular.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Regular.svg#Circe-Regular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Bold.woff') format('woff'),
+			url('fonts/Circe/Circe-Bold.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Bold.svg#Circe-Bold') format('svg');
+			font-weight: bold;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Light.woff') format('woff'),
+			url('fonts/Circe/Circe-Light.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Light.svg#Circe-Light') format('svg');
+			font-weight: 300;
+			font-style: normal;
+		}
+	</style>
+
+	<script>
+		$(function() {
+			$('.main-slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true,
+				fade: true,
+				arrows: true
+			});
+
+			$('.product-slider').slick({
+				centerMode: true,
+			  centerPadding: '30px',
+			  slidesToShow: 3,
+				dots: false,
+				arrows: true,
+				responsive: [
+					{
+			      breakpoint: 992,
+			      settings: {
+							centerMode: false,
+							slidesToShow: 2,
+			      }
+			    },
+					{
+			      breakpoint: 600,
+			      settings: {
+							slidesToShow: 1,
+			      }
+			    }
+				]
+			});
+		});
+	</script>
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<section class="section section_slider">
+		<div class="main-slider">
+			<div class="main-slider__item" style="background-image: url(img/slide1.jpg);">
+				<div class="container">
+					<div class="row justify-content-end pt pb align-items-center">
+	          <div class="col-lg-6 col-xl-5">
+							<div class="section__main-heading">Школа MY style</div>
+							<div class="section__text section__text_size_lg">
+								Обучение перманентному макияжу по нашей методике
+							</div>
+							<div class="btn-container mt-4">
+								<button class="btn btn-bg-blue">Отправить запрос</button>
+							</div>
+	          </div>
+	        </div>
+				</div>
+			</div>
+
+			<div class="main-slider__item main-slider__item_school-menu" style="background-image: url(img/slide2.jpg);">
+				<div class="container">
+					<div class="school-menu-wrapper school-menu-wrapper_slider">
+						<div class="school-menu">
+							<div class="school-menu__item">
+								<div class="school-menu__icon">
+									<svg class="icon">
+										<use xlink:href="img/sprite.svg#icon-apparaty" />
+									</svg>
+								</div>
+
+								<div class="school-menu__heading school-menu__heading_pt">
+									Аппараты
+								</div>
+
+								<div class="school-menu__semi-heading">Текст про аппараты</div>
+
+								<a href="#" class="btn btn-bg-blue">Подробнее</a>
+							</div>
+
+							<div class="school-menu__item">
+								<div class="school-menu__icon">
+									<svg class="icon">
+										<use xlink:href="img/sprite.svg#icon-materials" />
+									</svg>
+								</div>
+
+								<div class="school-menu__heading">
+									Расходные<br> материалы
+								</div>
+
+								<div class="school-menu__semi-heading">Текст про расходные материалы</div>
+
+								<a href="#" class="btn btn-bg-blue">Подробнее</a>
+							</div>
+
+							<div class="school-menu__item">
+								<div class="school-menu__icon">
+									<svg class="icon">
+										<use xlink:href="img/sprite.svg#icon-pigmenty" />
+									</svg>
+								</div>
+
+								<div class="school-menu__heading school-menu__heading_pt">
+									пигменты
+								</div>
+
+								<div class="school-menu__semi-heading">Текст про пигменты</div>
+
+								<a href="#" class="btn btn-bg-blue">Подробнее</a>
+							</div>
+
+							<div class="school-menu__item">
+								<div class="school-menu__icon">
+									<svg class="icon">
+										<use xlink:href="img/sprite.svg#icon-professional" />
+									</svg>
+								</div>
+
+								<div class="school-menu__heading school-menu__heading_pt">
+									Professional
+								</div>
+
+								<div class="school-menu__semi-heading">Текст про professional stuff</div>
+
+								<a href="#" class="btn btn-bg-blue">Подробнее</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-slider__item" style="background-image: url(img/slide3.jpg);">
+				<div class="container">
+					<div class="row justify-content-end pt pb align-items-center">
+	          <div class="col-lg-6 col-xl-5">
+							<div class="section__main-heading">Аппараты</div>
+							<div class="section__text section__text_size_lg">
+								Запишитесь на тест драйв в офисах компании
+							</div>
+							<div class="btn-container mt-4">
+								<button class="btn btn-bg-blue">Подробне</button>
+							</div>
+	          </div>
+	        </div>
+				</div>
+			</div>
+
+
+			<div class="main-slider__item main-slider__item_slider" style="background-image: url(img/slide4.jpg);">
+				<div class="container">
+					<div class="section__heading section__heading_no-line">
+						Пигменты
+					</div>
+					<div class="product-slider">
+						<div class="item">
+							<div class="img">
+								<svg class="icon" style="fill: #e95957">
+									<use xlink:href="img/sprite.svg#icon-stroke"></use>
+								</svg>
+								<img src="http://2.59.43.184/upload/resize_cache/iblock/686/274_160_1c581f715b0e26ceece966787bc537932/6863ae4bb791b9d92cbc59cc27dc154d.png">
+							</div>
+							<div class="caption">
+								<div class="title">
+									663 Фламинго
+								</div>
+
+								<div class="preview_text">
+									светлый, насыщенный тон, для осветления (при смешивании)
+								</div>
+
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue" tabindex="0">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="img">
+								<svg class="icon" style="fill: #e95957">
+									<use xlink:href="img/sprite.svg#icon-stroke"></use>
+								</svg>
+								<img src="http://2.59.43.184/upload/resize_cache/iblock/686/274_160_1c581f715b0e26ceece966787bc537932/6863ae4bb791b9d92cbc59cc27dc154d.png">
+							</div>
+							<div class="caption">
+								<div class="title">
+									663 Фламинго
+								</div>
+
+								<div class="preview_text">
+									светлый, насыщенный тон, для осветления (при смешивании)
+								</div>
+
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue" tabindex="0">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="img">
+								<svg class="icon" style="fill: #e95957">
+									<use xlink:href="img/sprite.svg#icon-stroke"></use>
+								</svg>
+								<img src="http://2.59.43.184/upload/resize_cache/iblock/686/274_160_1c581f715b0e26ceece966787bc537932/6863ae4bb791b9d92cbc59cc27dc154d.png">
+							</div>
+							<div class="caption">
+								<div class="title">
+									663 Фламинго
+								</div>
+
+								<div class="preview_text">
+									светлый, насыщенный тон, для осветления (при смешивании)
+								</div>
+
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue" tabindex="0">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="img">
+								<svg class="icon" style="fill: #e95957">
+									<use xlink:href="img/sprite.svg#icon-stroke"></use>
+								</svg>
+								<img src="http://2.59.43.184/upload/resize_cache/iblock/686/274_160_1c581f715b0e26ceece966787bc537932/6863ae4bb791b9d92cbc59cc27dc154d.png">
+							</div>
+							<div class="caption">
+								<div class="title">
+									663 Фламинго
+								</div>
+
+								<div class="preview_text">
+									светлый, насыщенный тон, для осветления (при смешивании)
+								</div>
+
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue" tabindex="0">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="promo-link">
+			<a href="#">Акции</a>
+		</div>
+	</section>
+
+
+
+
+
+</body>
+</html>
