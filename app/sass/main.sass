@@ -280,14 +280,14 @@ button.btn
 
 
 
-.produсt-card
-	.produсt-card__heading
+.product-card
+	.product-card__heading
 		font-size: 28px
 		color: #232323
 		letter-spacing: 0.1em
 		text-transform: uppercase
 		margin: 0.5em 0
-	.produсt-card__term
+	.product-card__term
 		font-size: 22px
 		color: #75b8de
 		letter-spacing: 0.1em
@@ -302,13 +302,13 @@ button.btn
 			left: 0
 			width: 268px
 
-	.produсt-card__number
+	.product-card__number
 		letter-spacing: 0.1em
 		color: #75b8de
 		font-size: 22px
 		text-align: right
 
-	.produсt-card__text
+	.product-card__text
 		letter-spacing: 0.1em
 		font-size: 16px
 		color: #232323
@@ -336,7 +336,7 @@ button.btn
 					top: 7px
 					left: 0
 
-	.produсt-card__img
+	.product-card__img
 		border: 1px solid #eeeeee
 		padding-top: 20px
 		padding-bottom: 20px
@@ -345,7 +345,7 @@ button.btn
 		position: relative
 		display: flex
 		align-items: center
-	.produсt-card__img-icon
+	.product-card__img-icon
 		width: 70px
 		height: 70px
 		border: 1px solid #eeeeee
@@ -361,11 +361,11 @@ button.btn
 			max-width: 70%
 			max-height: 50%
 			height: auto
-	.produсt-card__img-main
+	.product-card__img-main
 		position: relative
 		z-index: 2
 		margin: auto
-	.produсt-card__img-bottom-layer
+	.product-card__img-bottom-layer
 		z-index: 1
 		left: 0
 		right: 0
@@ -693,15 +693,6 @@ button.btn
 	.school-menu
 		display: flex
 		height: 666px
-		.school-menu__icon
-			width: 72px
-			height: 72px
-			margin-left: auto
-			margin-right: auto
-			margin-bottom: 28px
-			.icon
-				width: 72px
-				height: 72px
 		.school-menu__heading
 			letter-spacing: 0.075em
 			color: #232323
@@ -753,12 +744,7 @@ button.btn
 					opacity: 1
 				background-color: rgba(255, 255, 255, .9)
 
-	&.school-menu-wrapper_slider
-		height: 825px
-		.school-menu
-			height: 825px
-			.school-menu__item
-				padding-top: 300px
+
 .bx-pagination
 	.bx-pagination-container
 		ul
@@ -830,7 +816,7 @@ button.btn
 	-ms-transform: rotate(45deg)
 	transform: rotate(45deg)
 
-.slider_pop-items, .product-slider
+.slider_pop-items
 	.slick-list
 		padding-top: 30px
 
@@ -1016,10 +1002,6 @@ button.btn
 	.slick-dots li.slick-active button:before
 		background: #5BAFDD
 
-.product-slider
-	.item
-		width: 320px
-		border-color: transparent
 
 .sidebar
 	padding: 15px
@@ -1273,125 +1255,4 @@ button.btn
 		display: block
 		margin-top: 30px
 
-.main-slider
-	margin-bottom: 0
-	.slick-arrow
-		width: 40px
-		height: 40px
-		border-radius: 50%
-		position: absolute
-		text-indent: -9999px
-		z-index: 2
-		transition: .3s ease
-		background-color: rgba(255,255,255,0.5)
-		&:before
-			display: none
-		&:after
-			width: 10px
-			height: 19px
-			content: ''
-			display: block
-			top: 11px
-			border: 0
-			background: url(../img/arr2.png) 0 0 no-repeat
-			position: absolute
-		&.slick-prev
-			left: 30px
-			&:after
-				left: 14px
-		&.slick-next
-			right: 30px
-			&:after
-				transform: rotate(180deg)
-				right: 14px
-		&:hover
-			background-color: rgba(255,255,255,1)
-	.main-slider__item
-		height: 825px
-		display: flex
-		width: 100%
-		background-repeat: none
-		background-position: center
-		background-size: cover
-		.container
-			margin-top: auto
-			margin-bottom: auto
-		.product-slider
-			width: 900px
-			margin-left: -300px
-			.item
-				.img, .caption
-					opacity: 0.5
-				.btn
-					display: none
-				&.slick-center
-					.img, .caption
-						opacity: 1
-					&:hover
-						.btn
-							display: inline-block
-
-
-			.slick-prev,
-			.slick-next
-				width: 16px
-				height: 31px
-				top: 50%
-				margin-top: -15.5px
-				background-color: transparent
-				background: url(../img/arr3.png) 0 0 no-repeat
-				&:after
-					display: none
-
-			.slick-prev
-				left: 300px
-			.slick-next
-				right: 300px
-				margin-top: -31px
-				transform: rotate(180deg)
-	.slick-dots
-		bottom: 70px
-		li
-			button
-				&:before
-					background-color: #8e8e91
-			&.slick-active
-				button
-					&:before
-						background-color: #75b8de
-						opacity: .5
-
-
-
-	&.slick-dotted.slick-slider
-		margin-bottom: 0
-
-	.main-slider__item
-		&.main-slider__item_slider
-			.section__heading
-				width: 320px
-				text-align: center
-
-.promo-link
-	text-align: center
-	a
-		background: url(../img/sale_title_black_sprite.png) top left no-repeat
-		width: 168px
-		height: 54px
-		display: inline-block
-		text-indent: -9999px
-		text-decoration: none
-		cursor: pointer
-		&:hover
-			background-position: -216px 0px
-
-
-.section_slider
-	position: relative
-	.promo-link
-		position: absolute
-		left: 0
-		bottom: 90px + 38px
-		width: 100%
-		cursor: pointer
 @import "media" // Всегда в конце
