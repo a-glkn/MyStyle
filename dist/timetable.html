@@ -13,7 +13,7 @@
 	<!-- Дубль стилей напрмую с сайта и гугла -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
 
-	<link rel="stylesheet" href="http://2.59.43.184/bitrix/cache/css/s1/mystyle/template_25f86cd3a27497e74be5a5550cf13b61/template_25f86cd3a27497e74be5a5550cf13b61_v1.css?1560512111160071">
+	<link rel="stylesheet" href="http://2.59.43.184/bitrix/cache/css/s1/mystyle/template_0ac546a17f3f2550f0fa4fa81a2944f2/template_0ac546a17f3f2550f0fa4fa81a2944f2_v1.css?1562322872175837">
 	<link rel="stylesheet" href="http://2.59.43.184/bitrix/cache/css/s1/mystyle/page_5768c145a7dfcc7d031bcccde981f2f2/page_5768c145a7dfcc7d031bcccde981f2f2_v1.css?15605121116461">
 	<!-- Конец дублей -->
 
@@ -79,6 +79,14 @@
 		}
 	</style>
 
+	<script>
+		$(function() {
+			$('.col-sidebar .filter-toggle-btn').click(function(event) {
+				$('.col-sidebar .sidebar').slideToggle();
+			});
+
+		});
+	</script>
 
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -88,7 +96,15 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-xl-3">
+				<div class="col-xl-3 col-sidebar">
+					<button class="btn filter-toggle-btn">
+						<span>Фильтр</span>
+
+						<svg class="icon">
+							<use xlink:href="img/sprite.svg#icon-menu" />
+						</svg>
+					</button>
+
 					<aside class="sidebar">
 						<div class="sidebar__heading">Выберите город</div>
 
