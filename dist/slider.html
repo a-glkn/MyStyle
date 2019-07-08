@@ -54,35 +54,37 @@
 	</style>
 
 	<script>
-		$(function() {
+	$(function() {
 			$('.main-slider').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				dots: true,
 				fade: true,
-				arrows: true
+				arrows: true,
+				swipe: false
 			});
 
 			$('.product-slider').slick({
 				centerMode: true,
-			  centerPadding: '30px',
-			  slidesToShow: 3,
+				centerPadding: '30px',
+				slidesToShow: 3,
 				dots: false,
 				arrows: true,
 				responsive: [
 					{
-			      breakpoint: 992,
-			      settings: {
+						breakpoint: 992,
+						settings: {
 							centerMode: false,
 							slidesToShow: 2,
-			      }
-			    },
+						}
+					},
 					{
-			      breakpoint: 600,
-			      settings: {
+						breakpoint: 600,
+						settings: {
+							centerMode: false,
 							slidesToShow: 1,
-			      }
-			    }
+						}
+					}
 				]
 			});
 		});
