@@ -55,6 +55,37 @@
 
 	<script>
 	$(function() {
+
+		$('.product-slider').slick({
+			centerMode: true,
+			centerPadding: '30px',
+			slidesToShow: 3,
+			dots: false,
+			arrows: true,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						centerMode: false,
+						slidesToShow: 2,
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						centerMode: false,
+						slidesToShow: 1,
+					}
+				}
+			]
+		});
+
+			$('.main-slider').on('afterChange', function(event, slick, direction){
+
+				$('.product-slider').slick('slickGoTo', 0);
+
+			});
+
 			$('.main-slider').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -64,29 +95,8 @@
 				swipe: false
 			});
 
-			$('.product-slider').slick({
-				centerMode: true,
-				centerPadding: '30px',
-				slidesToShow: 3,
-				dots: false,
-				arrows: true,
-				responsive: [
-					{
-						breakpoint: 992,
-						settings: {
-							centerMode: false,
-							slidesToShow: 2,
-						}
-					},
-					{
-						breakpoint: 600,
-						settings: {
-							centerMode: false,
-							slidesToShow: 1,
-						}
-					}
-				]
-			});
+
+
 		});
 	</script>
 
