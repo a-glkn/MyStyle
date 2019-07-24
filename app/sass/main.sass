@@ -133,6 +133,35 @@ button.btn
 			left: 0
 			margin-left: 0
 			border-color: #eeeeee
+	&.section__heading_quote
+		position: relative
+		padding-top: 70px
+		padding-bottom: 70px
+		margin: 0
+		&:before
+			content: ''
+			display: block
+			width: 23px
+			height: 21px
+			position: absolute
+			top: 0
+			left: 50%
+			margin-left: -11.5px
+			background: url(../img/quote.png) 0 0 no-repeat
+		&:after
+			border: 0
+			content: ''
+			display: block
+			width: 23px
+			height: 21px
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -11.5px
+			transform: rotate(180deg)
+			background: url(../img/quote.png) 0 0 no-repeat
+
+
 .section__semi-heading
 	font-size: 16px
 	color: #232323
@@ -233,6 +262,7 @@ button.btn
 	display: flex
 	justify-content: space-around
 	.ordered-features__item
+		flex: 1 1 0
 		text-align: center
 		font-size: 16px
 		color: #232323
@@ -260,7 +290,9 @@ button.btn
 		p
 			width: 170px
 			margin: 0 auto
-
+		div
+			padding-left: 15px
+			padding-right: 15px
 .icons-list
 	display: flex
 	justify-content: space-around
@@ -271,6 +303,7 @@ button.btn
 		line-height: 1.25
 		letter-spacing: 0.1em
 		margin-top: 2em
+		flex: 1 1 0
 		.icon
 			width: 71px
 			height: 71px
@@ -297,6 +330,10 @@ button.btn
 		p
 			width: 310px
 			margin: 0 auto
+
+		div
+			padding-left: 15px
+			padding-right: 15px
 
 
 
@@ -1282,6 +1319,11 @@ button.btn
 		margin-top: 1em
 		color: #75b8de
 		text-decoration: none
+
+.bg-grey
+	.team
+		.team__item
+			background-color: #fff
 
 .section_gallery
 	img
