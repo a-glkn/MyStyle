@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>MyStyle</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Дубль стилей напрмую с сайта и гугла -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="http://2.59.43.184/local/templates/mystyle/css/normalize.css?15566063976252">
+	<link rel="stylesheet" href="http://2.59.43.184/local/templates/mystyle/template_styles.css?156257042548085">
+	<link rel="stylesheet" href="http://2.59.43.184/local/templates/mystyle/css/bootstrap-grid.min.css?155660639748488">
+	<!-- Конец дублей -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+
+
+	<!-- Fancybox с сайта -->
+	<script type="text/javascript" src="http://2.59.43.184/local/templates/mystyle/js/fancybox/jquery.fancybox.min.js"></script>
+
+
+	<style>
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Regular.woff') format('woff'),
+			url('fonts/Circe/Circe-Regular.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Regular.svg#Circe-Regular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Bold.woff') format('woff'),
+			url('fonts/Circe/Circe-Bold.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Bold.svg#Circe-Bold') format('svg');
+			font-weight: bold;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Light.woff') format('woff'),
+			url('fonts/Circe/Circe-Light.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Light.svg#Circe-Light') format('svg');
+			font-weight: 300;
+			font-style: normal;
+		}
+	</style>
+
+	<script>
+
+
+		$(function() {
+			$('.girl-plan-headers__item').mouseenter(function(event) {
+				var target = $(this).data('target');
+
+				$('.girl-plan-headers__item.hover').removeClass('hover');
+				$(this).addClass('hover');
+
+				$('.girl-plan-scheme .dot.active').removeClass('active');
+				$(target).addClass('active')
+			});
+
+		});
+
+	</script>
+
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<section class="section section_lips section_full_bg section_top_frame section_bottom_frame" style="background-image: url(img/bg-concept.jpg);">
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="section__main-heading section__main-heading_no-line">
+							ОБНОВЛЕННАЯ<br>
+							КОНЦЕПЦИЯ ME<br>
+							МИКРОЛИФТИНГ
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">Название блока</div>
+
+			<div class="ordered-features">
+				<div class="ordered-features__item">
+					<span>01</span>
+					<div>
+						Новый уникальный гиалуроновый комплекс «четыре в одном» и особая омолаживающая формула в составе продуктов
+					</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>02</span>
+					<div>
+						Разделение ассортимента продукции на профессиональную и домашнюю линии
+					</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>03</span>
+					<div>Новые продукты в серии МИКРОЛИФТИНГ</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section bg-grey pt pb">
+		<div class="container">
+			<div class="section__heading text-center section__heading_no-line section__heading_quote section__heading_size_md">
+				Микролифтинг - это введение восстанавливающих коктейлей на уровень средней части дермы (мезодермы) с помощью специального картриджа и аппарата для перманентного макияж.
+			</div>
+		</div>
+	</section>
+
+	<section class="section pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">Как работает МИКРОЛИФТИНГ?</div>
+
+
+			<div class="icons-list icons-list_3-col">
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-waves" />
+					</svg>
+
+					<span>Смягчает «гусиные лапки»</span>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-wrinkles" />
+					</svg>
+
+					<span>Разглаживает морщины на лбу и складки в надбровных дугах</span>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-oval" />
+					</svg>
+
+					<span>Возвращает овал лица, подтягивает форму скул</span>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-scar" />
+					</svg>
+
+					<span>осстанавливает кожу на рубцах и шрамах</span>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-hair" />
+					</svg>
+
+					<span>Активизирует рост волос</span>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-elasticity" />
+					</svg>
+
+					<span>Увеличивает упругость кожи</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section bg-grey pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">Гиалуроновый комплекс 4 в 1</div>
+
+			<div class="section__text text-center mt-4">
+				ЧЕГО МОЖНО ДОБИТЬСЯ ПРИ ПОМОЩИ<br> ГИАЛУРОНОВОГО КОМПЛЕКСА «4 в 1»?
+			</div>
+			<div class="section__text text-center mt-5">
+				Согласно последним достижениям научной мысли, четыре различные разновидности гиалуроновой кислоты с разным размером молекул можно объединить вместе, и таким образом создать синергетический комплекс - состав, способный проникать глубоко в кожу и действовать на протяжении длительного времени.
+			</div>
+			<div class="ordered-features flex-column">
+				<div class="ordered-features__item">
+					<span>01</span>
+					<div>ГИАЛУРОН 1 - молекулы с короткой цепью, или низкомолекулярная гиалуроновая кислота.<br> Защищает поверхность кожи и ухаживает за ней
+					</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>02</span>
+					<div>
+						ГИАЛУРОН 2 - cреднемолекулярная гиалуроновая кислота. Действует на слои эпидермиса
+					</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>03</span>
+					<div>
+						ГИАЛУРОН 3 - Высокомолекулярная — стимулирует клеточные процессы в коже и обладает свойством удерживать большое число молекул воды. Она придает коже упругость и высокую устойчивость к внешним негативным факторам.
+					</div>
+				</div>
+
+
+				<div class="ordered-features__item">
+					<span>04</span>
+					<div>
+						ГИАЛУРОН 4. Благодаря сочетанию ГИАЛУРОНА 2 и ГИАЛУРОНА 3 гиалуроновая кислота проникает в кожу еще быстрее и оказывает широкий спектр воздействий на глубокие слои кожи; с помощью этой комбинации гиалуроновая кислота способна оказывать на кожу длительное воздействие. Воздействие на кожу усиливается еще больше ввиду замедленного распада гиалурона.
+					</div>
+				</div>
+
+			</div>
+
+			<div class="section__text text-center mt-5">
+				Такое сочетание нескольких разновидностей гиалуроновой кислоты 1-4 объединили в ОДИН СИНТЕТИЧЕСКИЙ КОМПЛЕКС, который называется ГИАЛУРОНОВЫЙ КОМПЛЕКС «4 в 1»!
+			</div>
+		</div>
+	</section>
+
+	<section class="section pt pb">
+		<div class="container">
+
+			<div class="section__heading section__heading_blue-line">Ассортимент серии МИКРОЛИФТИНГ</div>
+
+			<!-- Использую слайдер с главной -->
+			<div class="catalog-wrapper">
+				<div class="items catalog-list row product-slider">
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke" />
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Гликолевый пилинг GlycoPeel 10%</a>
+								</div>
+								<div class="preview_text">
+									профессиональная серия
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke" />
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Гликолевый пилинг GlycoPeel 10%</a>
+								</div>
+								<div class="preview_text">
+									профессиональная серия
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke" />
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Гликолевый пилинг GlycoPeel 10%</a>
+								</div>
+								<div class="preview_text">
+									профессиональная серия
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke" />
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Гликолевый пилинг GlycoPeel 10%</a>
+								</div>
+								<div class="preview_text">
+									профессиональная серия
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke" />
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Гликолевый пилинг GlycoPeel 10%</a>
+								</div>
+								<div class="preview_text">
+									профессиональная серия
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke" />
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Гликолевый пилинг GlycoPeel 10%</a>
+								</div>
+								<div class="preview_text">
+									профессиональная серия
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke" />
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Гликолевый пилинг GlycoPeel 10%</a>
+								</div>
+								<div class="preview_text">
+									профессиональная серия
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke" />
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Гликолевый пилинг GlycoPeel 10%</a>
+								</div>
+								<div class="preview_text">
+									профессиональная серия
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section bg-grey pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">СПЕЦИАЛЬНЫЙ КАРТРИДЖ ДЛЯ ПРОВЕДЕНИЯ ПРОЦЕДУРЫ</div>
+
+			<div class="scheme">
+				<div class="item">
+					<img src="img/c1.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="img/c2.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="img/c3.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="ordered-features ordered-features_3-col">
+				<div class="ordered-features__item">
+					<span class="plus">+</span>
+					<div>
+						13 крошечных пластиковых<br> иголочек
+					</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span class="plus">+</span>
+					<div>
+						Иглы 0,5 мм<br> в длину
+					</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span class="plus">+</span>
+					<div>Глубина микропроколов<br> 0,2мм- 0,33мм</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span class="plus">+</span>
+					<div>
+						Регулируемая глубина<br> проникновения
+					</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span class="plus">+</span>
+					<div>
+						13 микроотверстий, через которые<br> активные вещества попадают<br> в глубь кожи
+					</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span class="plus">+</span>
+					<div>Стерильная<br> упаковка</div>
+				</div>
+
+			</div>
+
+			<div class="section__text mt-5 text-center">Микропроколы не травмируют стенки капиляров, стимулируют образование новых клеток кожи и способствуют более глубокому проникновению препаратов, что усиливает процесс регенерации.</div>
+		</div>
+	</section>
+
+	<section class="section pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">
+				Область применения процедуры МИКОЛИФТИНГ
+			</div>
+			<div class="girl-plan">
+				<div class="girl-plan-headers">
+					<div class="girl-plan-headers__item" data-target=".dot-face">
+						<span>01</span>
+						<div>
+							Лицо
+						</div>
+					</div>
+
+					<div class="girl-plan-headers__item" data-target=".dot-neck">
+						<span>02</span>
+						<div>
+							Шея
+						</div>
+					</div>
+
+					<div class="girl-plan-headers__item" data-target=".dot-cleavage">
+						<span>03</span>
+						<div>
+							Декольте
+						</div>
+					</div>
+
+					<div class="girl-plan-headers__item" data-target=".dot-palm">
+						<span>04</span>
+						<div>
+							Тыльная сторона<br> ладони
+						</div>
+					</div>
+				</div>
+				<div class="girl-plan-scheme mt-5">
+					<img src="img/girl.png" alt="">
+
+					<div class="dot dot-face dot-face_1"></div>
+					<div class="dot dot-face dot-face_2"></div>
+
+					<div class="dot dot-neck"></div>
+					<div class="dot dot-cleavage"></div>
+					<div class="dot dot-palm"></div>
+
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+</body>
+</html>

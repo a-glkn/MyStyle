@@ -31,6 +31,11 @@
 				display: flex
 		.sidebar
 			display: none
+
+	.scheme
+		.item
+			&:after
+				right: -80px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	.article
@@ -164,6 +169,19 @@
 
 	.main-slider .main-slider__item .product-slider .item .caption, .main-slider .main-slider__item .product-slider .item .img
 		opacity: 1
+
+	.scheme
+		flex-direction: column
+		.item
+			margin-bottom: 50px
+			&:after
+				top: auto
+				bottom: -45px
+				left: 50%
+				margin-left: -11px
+				transform: rotate(90deg)
+			&:last-child
+				margin-bottom: 0
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.article
@@ -214,6 +232,10 @@
 	.main-slider
 		.main-slider__item
 			background-position: right
+
+	.girl-plan .girl-plan-headers
+		position: static
+		.girl-plan-headers__item
 @media (max-width: 580px)
 	.slider_pop-items
 		.slick-prev
@@ -258,6 +280,10 @@
 			.countdown__digits__item
 				div
 					font-size: 11px
+
+@media only screen and (max-width : 360px)
+		.girl-plan-scheme
+			width: 100%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

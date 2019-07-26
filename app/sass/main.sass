@@ -85,6 +85,9 @@ button.btn
 		position: absolute
 		bottom: 0
 		left: 0
+	&.section__main-heading_no-line
+		&:after
+			display: none
 
 .section__heading
 	font-weight: normal
@@ -160,7 +163,8 @@ button.btn
 			margin-left: -11.5px
 			transform: rotate(180deg)
 			background: url(../img/quote.png) 0 0 no-repeat
-
+	&.section__heading_size_md
+		font-size: 24px
 
 .section__semi-heading
 	font-size: 16px
@@ -293,6 +297,78 @@ button.btn
 		div
 			padding-left: 15px
 			padding-right: 15px
+	&.ordered-features_3-col
+		flex-wrap: wrap
+		.ordered-features__item
+			flex: 0 1 33.3333%
+.flex-column
+	flex-direction: column
+
+.girl-plan
+	position: relative
+	.girl-plan-headers
+		position: absolute
+		top: 0
+		left: 0
+
+.girl-plan-scheme
+	width: 333px
+	margin-left: auto
+	margin-right: auto
+	position: relative
+	.img
+		width: 100%
+		height: auto
+	.dot
+		width: 45px
+		height: 45px
+		display: inline-block
+		position: absolute
+		opacity: .3
+		transition: .3s ease
+		background: url(../img/zone.png) 0 0 no-repeat
+		&.active
+			opacity: 1
+		&.dot-face
+			top: 30.4%
+			&.dot-face_1
+				left: 32.43%
+			&.dot-face_2
+				right: 32.43%
+		&.dot-neck
+			left: 50.15%
+			top: 47.96%
+
+		&.dot-cleavage
+			left: 17.5%
+			top: 64.07%
+		&.dot-palm
+			left: 63.06%
+			top: 69.126%
+
+.scheme
+	background-color: #fff
+	display: flex
+	justify-content: space-around
+	padding-top: 40px
+	padding-bottom: 40px
+	.item
+		position: relative
+		text-align: center
+		&:after
+			width: 22px
+			height: 42px
+			background: url(../img/arr-right.png) 0 0 no-repeat
+			display: block
+			content: ''
+			right: -110px
+			top: 50%
+			margin-top: -21px
+			position: absolute
+		&:last-child
+			&:after
+				display: none
+
 .icons-list
 	display: flex
 	justify-content: space-around
@@ -335,7 +411,10 @@ button.btn
 			padding-left: 15px
 			padding-right: 15px
 
-
+	&.icons-list_3-col
+		flex-wrap: wrap
+		.icons-list__item
+			flex: 0 1 33.3333%
 
 .product-card
 	.product-card__heading
@@ -1075,6 +1154,17 @@ button.btn
 		width: 320px
 		border-color: transparent
 
+.plus
+	color: #66b0da !important
+	font-size: 60px !important
+
+.product-slider.items
+	.item
+		width: 100%
+		margin-bottom: 0
+		margin-left: 0
+		margin-right: 0
+
 .sidebar
 	padding: 15px
 	margin-bottom: 4em
@@ -1445,7 +1535,43 @@ button.btn
 		&:hover
 			background-position: -216px 0px
 
-
+.girl-plan-headers
+	display: flex
+	width: 100%
+	flex-wrap: wrap
+	.girl-plan-headers__item
+		text-align: center
+		flex-basis: 50%
+		font-size: 16px
+		color: #232323
+		line-height: 1.25
+		letter-spacing: 0.1em
+		margin-top: 4em
+		opacity: .5
+		transition: .3s ease
+		cursor: pointer
+		&.hover
+			opacity: 1
+		span
+			font-size: 36px
+			color: #66b0da
+			display: block
+			position: relative
+			padding-bottom: 10px
+			margin-bottom: 16px
+			&:after
+				content: ''
+				display: block
+				width: 72px
+				height: 1px
+				background-color: #66b0da
+				position: absolute
+				bottom: 0
+				left: 50%
+				margin-left: -36px
+		div
+			padding-left: 15px
+			padding-right: 15px
 .section_slider
 	position: relative
 	.promo-link
