@@ -22,7 +22,8 @@
 
 .mt-4
 	margin-top: 2em
-
+.ttn
+	text-transform: none !important
 
 .mt-5
 	margin-top: 2.5em
@@ -356,6 +357,19 @@ button.btn
 			left: 63.06%
 			top: 69.126%
 
+		&.dot-eyebrows
+			top: 20.77%
+			&.dot-eyebrows_1
+				left: 32.43%
+			&.dot-eyebrows_2
+				right: 32.43%
+		&.dot-eyelids
+			top: 25.24%
+			left: 55.85%
+
+		&.dot-lips
+			top: 35.72%
+			left: 42.94%
 .scheme
 	background-color: #fff
 	display: flex
@@ -413,6 +427,12 @@ button.btn
 				bottom: 0
 				left: 50%
 				margin-left: -36px
+			&.top-line
+				padding-top: 17px
+				&:after
+					bottom: auto
+					top: 0
+
 		p
 			width: 310px
 			margin: 0 auto
@@ -1175,6 +1195,9 @@ button.btn
 		margin-bottom: 0
 		margin-left: 0
 		margin-right: 0
+
+._product-item-container
+	position: relative
 
 .sidebar
 	padding: 15px
