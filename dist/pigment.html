@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>MyStyle</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Дубль стилей напрмую с сайта и гугла -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="http://2.59.43.184/local/templates/mystyle/css/normalize.css?15566063976252">
+	<link rel="stylesheet" href="http://2.59.43.184/local/templates/mystyle/template_styles.css?156257042548085">
+	<link rel="stylesheet" href="http://2.59.43.184/local/templates/mystyle/css/bootstrap-grid.min.css?155660639748488">
+	<!-- Конец дублей -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+						integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+						crossorigin="anonymous"></script>
+
+
+	<!-- Fancybox с сайта -->
+	<script type="text/javascript" src="http://2.59.43.184/local/templates/mystyle/js/fancybox/jquery.fancybox.min.js"></script>
+
+
+	<style>
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Regular.woff') format('woff'),
+			url('fonts/Circe/Circe-Regular.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Regular.svg#Circe-Regular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face{
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Bold.woff') format('woff'),
+			url('fonts/Circe/Circe-Bold.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Bold.svg#Circe-Bold') format('svg');
+			font-weight: bold;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Circe';
+			src: url('fonts/Circe/Circe-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Circe/Circe-Light.woff') format('woff'),
+			url('fonts/Circe/Circe-Light.ttf')  format('truetype'),
+			url('fonts/Circe/Circe-Light.svg#Circe-Light') format('svg');
+			font-weight: 300;
+			font-style: normal;
+		}
+	</style>
+
+	<script>
+
+
+		$(function() {
+			$('.girl-plan-headers__item').mouseenter(function(event) {
+				var target = $(this).data('target');
+
+				$('.girl-plan-headers__item.hover').removeClass('hover');
+				$(this).addClass('hover');
+
+				$('.girl-plan-scheme .dot.active').removeClass('active');
+				$(target).addClass('active')
+			});
+
+		});
+
+	</script>
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<section class="section pt pb">
+		<div class="container">
+
+			<div class="section__heading section__heading_blue-line">Ассортимент серии МИКРОЛИФТИНГ</div>
+
+			<div class="catalog-wrapper">
+				<div class="items catalog-list row product-slider">
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<div class="icon-circle">
+								<svg class="icon">
+									<use xlink:href="img/sprite.svg#icon-camouflage"></use>
+								</svg>
+							</div>
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke"></use>
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Камуфляж</a>
+								</div>
+								<div class="preview_text">
+									Пигменты для перманентного макияжа premium
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<div class="icon-circle">
+								<svg class="icon">
+									<use xlink:href="img/sprite.svg#icon-lips"></use>
+								</svg>
+							</div>
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke"></use>
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Камуфляж</a>
+								</div>
+								<div class="preview_text">
+									Пигменты для перманентного макияжа premium
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<div class="icon-circle">
+								<svg class="icon">
+									<use xlink:href="img/sprite.svg#icon-eye"></use>
+								</svg>
+							</div>
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke"></use>
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Камуфляж</a>
+								</div>
+								<div class="preview_text">
+									Пигменты для перманентного макияжа premium
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item catalog-list__item col-md-6 col-lg-3">
+						<div class="_product-item-container">
+							<div class="icon-circle">
+								<svg class="icon">
+									<use xlink:href="img/sprite.svg#icon-eyebrow"></use>
+								</svg>
+							</div>
+							<a href="#" class="img" title="Камуфляж" data-entity="image-wrapper">
+								<svg class="icon" style="fill: #75b8de">
+									<use xlink:href="img/sprite.svg#icon-stroke"></use>
+								</svg>
+								<img src="img/good.png">
+							</a>
+
+							<div class="caption">
+								<div class="title">
+									<a href="#" title="Гликолевый пилинг GlycoPeel 10%">Камуфляж</a>
+								</div>
+								<div class="preview_text">
+									Пигменты для перманентного макияжа premium
+								</div>
+								<div class="bottom">
+									<div class="link">
+										<a href="#" class="btn btn-bg-blue">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section bg-grey pt pb">
+	 <div class="container">
+		 <div class="section__heading section__heading_blue-line">НОВОЕ ПОКОЛЕНИЕ ПИГМЕНТОВ</div>
+
+		 <div class="section__text text-center">
+			 	(только для профессионалов)
+				<br>
+				<br>
+				Новое поколение пигментов для татуажа  на основе улучшенной<br> гиппоаллергенной формулы красящих веществ
+		 </div>
+
+		 <div class="icons-list">
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-y"></use>
+					</svg>
+
+					<span class="top-line ttn">14<br> оттенков</span>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-stick"></use>
+					</svg>
+
+					<span class="top-line ttn">100%<br> фиксация в коже</span>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-match"></use>
+					</svg>
+
+					<span class="top-line ttn">100%<br> соответствие цвета</span>
+				</div>
+
+				<div class="icons-list__item">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#icon-flacon"></use>
+					</svg>
+
+					<span class="top-line ttn">10 мл<br> объем флакона</span>
+				</div>
+			</div>
+
+	 </div>
+ </section>
+
+	<section class="section pt pb">
+	 <div class="container">
+		 <div class="section__heading section__heading_blue-line">ОСОБЕННОСТИ ПРОДУКТА</div>
+
+		 <div class="section__text text-center">
+			 	Пигменты для татуажа полностью на синтетической основе.
+				Не имеющая аналогов технология капсулирования микрочастиц пигмента
+				Другая степень очистки, пигмент без примесей.
+				Физическая и химическая стабильность на порядок выше, чем у оксидов железа.
+		 </div>
+
+	 </div>
+ </section>
+
+	<section class="section bg-grey pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">ПРЕИМУЩЕСТВА</div>
+
+			<div class="ordered-features ordered-features_3-col">
+				<div class="ordered-features__item">
+					<span>01</span>
+					<div>ЭКОНОМИЯ ВРЕМЕНИ МАСТЕРА НА ПРОЦЕДУРУ В 3 РАЗА</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>02</span>
+					<div>100% ПОПАДАНИЕ ЦВЕТА</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>03</span>
+					<div>ЦВЕТОВАЯ УСТОЙЧИВОСТЬ ПИГМЕНТА ВО ВРЕМЕНИ</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>04</span>
+					<div>ВЫСОКОЕ НАСЫЩЕНИЕ ПИГМЕНТОМ</div>
+				</div>
+
+
+				<div class="ordered-features__item">
+					<span>05</span>
+					<div>
+							ПОВЫШЕННАЯ ПЛОТНОСТЬ РЕЗУЛЬТИРУЮЩЕГО ЦВЕТА
+					</div>
+				</div>
+
+				<div class="ordered-features__item">
+					<span>06</span>
+					<div>
+						ЭКОНОМИЧНЫЙ РАСХОД
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section pt pb">
+		<div class="container">
+			<div class="section__heading section__heading_blue-line">
+				ЗОНЫ ВОЗДЕЙСТВИЯ
+			</div>
+			<div class="girl-plan">
+				<div class="girl-plan-headers">
+					<div class="girl-plan-headers__item" data-target=".dot-eyebrows">
+						<span>01</span>
+						<div>
+							Брови
+						</div>
+					</div>
+
+					<div class="girl-plan-headers__item" data-target=".dot-eyelids">
+						<span>02</span>
+						<div>
+							Веки
+						</div>
+					</div>
+
+					<div class="girl-plan-headers__item" data-target=".dot-lips">
+						<span>03</span>
+						<div>
+							Губы
+						</div>
+					</div>
+
+				</div>
+				<div class="girl-plan-scheme mt-5">
+					<img src="img/girl.png" alt="">
+
+					<div class="dot dot-eyebrows dot-eyebrows_1"></div>
+					<div class="dot dot-eyebrows dot-eyebrows_2"></div>
+
+					<div class="dot dot-eyelids"></div>
+					<div class="dot dot-lips"></div>
+					<div class="dot dot-palm"></div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section bg-grey pt pb">
+	 <div class="container">
+		 <div class="section__heading section__heading_blue-line">ОСОБЕННОСТИ РАБОТЫ</div>
+
+		 <div class="section__text text-center">
+			 Максимально легкая работа. Никакого давления на иглу. Не смешивать пигменты PREMIUM с пигментами из других серий и торговых марок. Применение только в чистом виде.
+		 </div>
+
+	 </div>
+ </section>
+
+ <section class="section pt pb">
+	 <div class="container">
+		 <div class="section__heading text-center section__heading_no-line section__heading_quote">
+			 Мы считаем, что каждый клиент имеет право на наивысшее качество. Это касается всех компонентов настоящего профессионализма: аппаратуры, пигментов, расходных материалов и, что самое важное,– квалифицированной работы мастера.
+		 </div>
+	 </div>
+ </section>
+
+
+ <div class="index-section index-section_partners-wrapper section_top_frame section_bottom_frame">
+    <div class="container">
+    	<div class="index-section-title"><span class="index-section-title_text">Партнеры</span></div>
+
+			<div class="partners-list row align-items-center align-items-center flex-wrapper justify-content-between partners-list row">
+					<div class="partners-list__item partners-list-item" id="bx_3485106786_11">
+					<img src="http://2.59.43.184/upload/iblock/d94/d94840bebb59ed48bbd7bf4092c17485.png" class="partners-list-item__img" title="ICG">
+				</div>
+
+					<div class="partners-list__item partners-list-item" id="bx_3485106786_9">
+					<img src="http://2.59.43.184/upload/iblock/cc9/cc9e59f28a0e5cf93f7cd568841d72ee.png" class="partners-list-item__img" title="Blik">
+				</div>
+
+					<div class="partners-list__item partners-list-item" id="bx_3485106786_10">
+					<img src="http://2.59.43.184/upload/iblock/6d4/6d430e8c4f51f9fe07d9d950d5f41744.png" class="partners-list-item__img" title="Estline">
+				</div>
+
+					<div class="partners-list__item partners-list-item" id="bx_3485106786_8">
+					<img src="http://2.59.43.184/upload/iblock/5b6/5b674a625e4e4c2b23df65cd58ac1763.png" class="partners-list-item__img" title="Bernard">
+				</div>
+
+					<div class="partners-list__item partners-list-item" id="bx_3485106786_12">
+					<img src="http://2.59.43.184/upload/iblock/e7d/e7d920cc93a5a75cbe7c21f381f064e8.png" class="partners-list-item__img" title="IONTO">
+				</div>
+			</div>
+    </div>
+	</div>
+
+</body>
+</html>
